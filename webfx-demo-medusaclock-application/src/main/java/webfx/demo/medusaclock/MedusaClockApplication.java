@@ -15,11 +15,11 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.LinearGradient;
 import javafx.stage.Stage;
-import webfx.demo.medusaclock.hansolo.Clock;
-import webfx.demo.medusaclock.hansolo.skins.ClockSkin;
-import webfx.demo.medusaclock.hansolo.skins.DBClockSkin;
-import webfx.demo.medusaclock.hansolo.skins.MorphingClockSkin;
-import webfx.demo.medusaclock.hansolo.skins.TileClockSkin;
+import eu.hansolo.medusa.Clock;
+import eu.hansolo.medusa.skins.ClockSkin;
+import eu.hansolo.medusa.skins.DBClockSkin;
+import eu.hansolo.medusa.skins.MorphingClockSkin;
+import eu.hansolo.medusa.skins.TileClockSkin;
 
 /**
  * @author Bruno Salmon

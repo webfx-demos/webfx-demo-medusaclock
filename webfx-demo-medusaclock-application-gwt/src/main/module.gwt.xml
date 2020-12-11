@@ -102,10 +102,6 @@
     <!--=======================< webfx-demo-medusaclock-application >=======================-->
     <!-- used by webfx-demo-medusaclock-application-gwt (APPLICATION) -->
     <source path="webfx/demo/medusaclock"/>
-    <source path="webfx/demo/medusaclock/hansolo"/>
-    <source path="webfx/demo/medusaclock/hansolo/events"/>
-    <source path="webfx/demo/medusaclock/hansolo/skins"/>
-    <source path="webfx/demo/medusaclock/hansolo/tools"/>
     <!--=================================< webfx-kit-gwt >==================================-->
     <!-- used by webfx-demo-medusaclock-application-gwt (IMPLICIT_PROVIDER) -->
     <!-- used by webfx-demo-medusaclock-application-gwt (EMULATION) -->
@@ -149,6 +145,12 @@
     <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
     <source path="webfx/kit/util/properties"/>
     <source path="webfx/kit/util/properties/conversion"/>
+    <!--================================< webfx-lib-medusa >================================-->
+    <!-- used by webfx-demo-medusaclock-application (SOURCE) -->
+    <source path="eu/hansolo/medusa"/>
+    <source path="eu/hansolo/medusa/events"/>
+    <source path="eu/hansolo/medusa/skins"/>
+    <source path="eu/hansolo/medusa/tools"/>
     <!--=======================< webfx-platform-client-uischeduler >========================-->
     <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
     <!-- used by webfx-platform-gwt-uischeduler-impl (SOURCE) -->
