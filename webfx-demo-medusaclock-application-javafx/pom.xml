@@ -45,7 +45,7 @@
     <properties>
         <plugin.javapackager.name>MedusaClock</plugin.javapackager.name>
         <plugin.javapackager.displayName>Medusa Clock</plugin.javapackager.displayName>
-        <plugin.javapackager.url>https://webfx-medusaclock-demo.netlify.app</plugin.javapackager.url>
+        <plugin.javapackager.url>https://medusaclock.webfx-project.org</plugin.javapackager.url>
     </properties>
 
     <build>
