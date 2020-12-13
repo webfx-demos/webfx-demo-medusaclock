@@ -8,9 +8,9 @@ module webfx.demo.medusaclock.application {
     requires webfx.lib.medusa;
 
     // Exported packages
-    exports webfx.demo.medusaclock;
+    exports dev.webfx.demo.medusaclock;
 
     // Provided services
-    provides javafx.application.Application with webfx.demo.medusaclock.MedusaClockApplication;
+    provides javafx.application.Application with dev.webfx.demo.medusaclock.MedusaClockApplication;
 
 }

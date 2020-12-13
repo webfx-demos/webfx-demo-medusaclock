@@ -1,4 +1,4 @@
-package webfx.demo.medusaclock;
+package dev.webfx.demo.medusaclock;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
