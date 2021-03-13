@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module>
+
+    <modules>
+        <module>webfx-demo-medusaclock-application</module>
+        <module>webfx-demo-medusaclock-application-javafx</module>
+        <module>webfx-demo-medusaclock-application-gwt</module>
+        <module>webfx-demo-medusaclock-application-gluon</module>
+    </modules>
+
+</module>
+
