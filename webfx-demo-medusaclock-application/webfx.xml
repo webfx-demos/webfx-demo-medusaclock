@@ -6,7 +6,7 @@
     </packages>
 
     <providers>
-        <provider spi="javafx.application.Application">dev.webfx.demo.medusaclock.MedusaClockApplication</provider>
+        <javafx.application.Application>dev.webfx.demo.medusaclock.MedusaClockApplication</javafx.application.Application>
     </providers>
 
     <dependencies>
