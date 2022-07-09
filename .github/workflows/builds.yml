@@ -32,7 +32,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        app: [{name: 'MedusaClock', module-token: 'webfx-demo-medusaclock', gwt-token: 'webfx_demo_medusaclock', gluon-token: 'Medusaclock', web-push-branch: 'medusaclock', ios-bundle-id: 'dev.webfx.demo.medusaclock', version: '0.1.0-SNAPSHOT'}]
+        app: [{name: 'MedusaClock', module-token: 'webfx-demo-medusaclock', gwt-token: 'webfx_demo_medusaclock', gluon-token: 'WebFXDemoMedusaclock', web-push-branch: 'medusaclock', ios-bundle-id: 'dev.webfx.demo.medusaclock', version: '0.1.0-SNAPSHOT'}]
         os-config:  [1, 2, 3, 4]
         include:
           - os-config: 1 # Generates builds 1) 2) 3) 4) & 5)
