@@ -54,8 +54,8 @@
     </dependencies>
 
     <properties>
-        <plugin.javapackager.name>webfx-demo-medusaclock</plugin.javapackager.name>
-        <plugin.javapackager.displayName>webfx-demo-medusaclock</plugin.javapackager.displayName>
+        <plugin.javapackager.name>WebFXDemoMedusaclock</plugin.javapackager.name>
+        <plugin.javapackager.displayName>WebFX Demo Medusaclock</plugin.javapackager.displayName>
         <plugin.javapackager.url/>
     </properties>
 

@@ -13,6 +13,8 @@
 
     <artifactId>webfx-demo-medusaclock-application-gluon</artifactId>
 
+    <name>WebFXDemoMedusaclock</name>
+
     <dependencies>
 
         <dependency>
