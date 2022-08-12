@@ -1,5 +1,9 @@
 package dev.webfx.demo.medusaclock;
 
+import eu.hansolo.medusa.Clock;
+import eu.hansolo.medusa.skins.ClockSkin;
+import eu.hansolo.medusa.skins.DBClockSkin;
+import eu.hansolo.medusa.skins.TileClockSkin;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -15,11 +19,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.LinearGradient;
 import javafx.stage.Stage;
-import eu.hansolo.medusa.Clock;
-import eu.hansolo.medusa.skins.ClockSkin;
-import eu.hansolo.medusa.skins.DBClockSkin;
-import eu.hansolo.medusa.skins.MorphingClockSkin;
-import eu.hansolo.medusa.skins.TileClockSkin;
 
 /**
  * @author Bruno Salmon
@@ -37,7 +36,6 @@ public final class MedusaClockApplication extends Application {
                 createSkinButton("Skin 1", this::createYota2Clock),
                 createSkinButton("Skin 2", this::createDBClock),
                 createSkinButton("Skin 3", this::createTileClock),
-                createSkinButton("Skin 4", this::createMorphingClock),
                 discreteCheckbox);
         hBox.setAlignment(Pos.CENTER);
         HBox.setMargin(discreteCheckbox, new Insets(0, 0, 0, 10));
@@ -79,13 +77,6 @@ public final class MedusaClockApplication extends Application {
     private void createDBClock() {
         createClock();
         clock.setSkin(new DBClockSkin(clock));
-    }
-
-    private void createMorphingClock() {
-        createClock();
-        clock.setMinuteColor(Color.BLUE);
-        clock.setHourColor(Color.GREEN);
-        clock.setSkin(new MorphingClockSkin(clock));
     }
 
     private void createYota2Clock() {
