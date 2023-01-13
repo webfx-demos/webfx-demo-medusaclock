@@ -293,7 +293,7 @@ jobs:
       - if: steps.linux_apt_install.outcome == 'failure'
         name: Retrying with another mirror (when apt install failed)
         run:  |
-          gem install apt-spy2
+          sudo gem install apt-spy2
           sudo apt-spy2 check
           sudo apt-spy2 fix --launchpad --commit --country=US
           sudo apt update
