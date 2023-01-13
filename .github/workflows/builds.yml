@@ -291,10 +291,9 @@ jobs:
         continue-on-error: true # So that we try with another mirror
 
       - if: steps.linux_apt_install.outcome == 'failure'
-        name: Retrying with another mirror (using ruby gem apt-spy2)
+        name: Retrying with another mirror (when apt install failed)
         run:  |
-          sudo apt-get install ruby-dev
-          gem install --no-ri --no-rdoc apt-spy2
+          gem install apt-spy2
           sudo apt-spy2 check
           sudo apt-spy2 fix --launchpad --commit --country=US
           sudo apt update
