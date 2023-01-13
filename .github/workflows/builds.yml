@@ -283,8 +283,23 @@ jobs:
 
       # Gluon needs additional libraries on Linux
       - if: runner.os == 'Linux'
+        id: linux_apt_install
         name: Install libraries required for Gluon on Linux
-        run: sudo apt update; sudo apt install libasound2-dev libavcodec-dev libavformat-dev libavutil-dev libgl-dev libgtk-3-dev libpango1.0-dev libxtst-dev
+        run: |
+          sudo apt update
+          sudo apt install libasound2-dev libavcodec-dev libavformat-dev libavutil-dev libgl-dev libgtk-3-dev libpango1.0-dev libxtst-dev
+        continue-on-error: true # So that we try with another mirror
+
+      - if: steps.linux_apt_install.outcome == 'failure'
+        name: Retrying with another mirror (using ruby gem apt-spy2)
+        run:  |
+          sudo apt-get install ruby-dev
+          gem install --no-ri --no-rdoc apt-spy2
+          sudo apt-spy2 check
+          sudo apt-spy2 fix --launchpad --commit --country=US
+          sudo apt update
+          sudo apt install libasound2-dev libavcodec-dev libavformat-dev libavutil-dev libgl-dev libgtk-3-dev libpango1.0-dev libxtst-dev
+        
 
       # Passing the Gluon License (if set)
       - if: env.GLUON_LICENSE != ''
