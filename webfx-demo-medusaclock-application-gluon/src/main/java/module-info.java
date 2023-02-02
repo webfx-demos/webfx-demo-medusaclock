@@ -7,7 +7,8 @@ module webfx.demo.medusaclock.application.gluon {
     requires webfx.kit.openjfx;
     requires webfx.platform.boot.java;
     requires webfx.platform.console.java;
-    requires webfx.platform.resource.java;
+    requires webfx.platform.os.gluon;
+    requires webfx.platform.resource.gluon;
     requires webfx.platform.scheduler.java;
     requires webfx.platform.shutdown.gluon;
 
