@@ -82,6 +82,13 @@
                         <list>dev/webfx/platform/meta/exe/[^/]+$</list>
                         <list>images/checkbox/[^/]+$</list>
                     </resourcesList>
+                    <appIdentifier>dev.webfx.demo.medusaclock</appIdentifier>
+                    <releaseConfiguration>
+                        <!-- macOS/iOS -->
+                        <bundleName>Medusa Clock</bundleName>
+                        <!-- Android -->
+                        <appLabel>Medusa Clock</appLabel>
+                    </releaseConfiguration>
 
                 </configuration>
             </plugin>
