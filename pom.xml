@@ -36,6 +36,7 @@
         <module>webfx-demo-medusaclock-application</module>
         <module>webfx-demo-medusaclock-application-gluon</module>
         <module>webfx-demo-medusaclock-application-gwt</module>
+        <module>webfx-demo-medusaclock-application-j2cl</module>
         <module>webfx-demo-medusaclock-application-openjfx</module>
     </modules>
 

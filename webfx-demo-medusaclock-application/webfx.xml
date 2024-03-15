@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project applicationId="dev.webfx.demo.medusaclock" applicationLabel="Medusa Clock">
+<project applicationId="dev.webfx.demo.medusaclock" applicationLabel="Medusa Clock" requiresTimezoneData="true">
 
     <exported-packages>
         <source-packages/>
