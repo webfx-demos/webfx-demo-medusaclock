@@ -89,7 +89,6 @@
                         <!-- Android -->
                         <appLabel>Medusa Clock</appLabel>
                     </releaseConfiguration>
-
                 </configuration>
             </plugin>
         </plugins>
